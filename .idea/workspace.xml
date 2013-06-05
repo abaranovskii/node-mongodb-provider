@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c17ec57b-c206-44ee-b177-d6a32cf178ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/utils.js" />
+    <list default="true" id="c17ec57b-c206-44ee-b177-d6a32cf178ee" name="Default" comment="Рефакторил метод ensureIndexes. Добавил модель utils для вспомогательных функций">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/index.js" afterPath="$PROJECT_DIR$/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/utils.js" afterPath="$PROJECT_DIR$/lib/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="node-mongodb-provider.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370403781124" ignored="false" />
-    <file path="/index.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370405123469" ignored="false" />
+    <file path="/Dummy.txt" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370459924958" ignored="false" />
+    <file path="/index.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370459666852" ignored="false" />
     <file path="/.gitignore" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370366517273" ignored="false" />
     <file path="$PROJECT_DIR$/../smetacloud/package.json" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370367886361" ignored="false" />
     <file path="/package.json" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370368032136" ignored="false" />
@@ -28,7 +28,8 @@
     <file path="$PROJECT_DIR$/../smetacloud/bin/start.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370369444752" ignored="false" />
     <file path="/start.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370369444100" ignored="false" />
     <file path="/UserProvider.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370405083965" ignored="false" />
-    <file path="/a.dummy" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370404243798" ignored="false" />
+    <file path="/a.dummy" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370458268138" ignored="false" />
+    <file path="/utils.js" changelist="c17ec57b-c206-44ee-b177-d6a32cf178ee" time="1370460054942" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="32" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
+            <state line="279" column="35" selection-start="6880" selection-end="6880" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,7 +61,7 @@
       <file leaf-file-name="utils.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="35" selection-start="276" selection-end="276" vertical-scroll-proportion="0.14090522">
+            <state line="33" column="76" selection-start="755" selection-end="755" vertical-scroll-proportion="0.4180743">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -106,15 +107,15 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/lib/utils.js" />
         <option value="$PROJECT_DIR$/lib/index.js" />
+        <option value="$PROJECT_DIR$/lib/utils.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1233" />
+    <option name="x" value="1269" />
     <option name="y" value="22" />
-    <option name="width" value="1144" />
+    <option name="width" value="1273" />
     <option name="height" value="1330" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -143,6 +144,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -161,23 +163,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-mongodb-provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node-mongodb-provider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -239,17 +226,21 @@
       <created>1370372344133</created>
       <updated>1370372344133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Рефакторил метод ensureIndexes. Добавил модель utils для вспомогательных функций">
+      <created>1370405249242</created>
+      <updated>1370405249242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1233" y="22" width="1144" height="1330" extended-state="0" />
+    <frame x="1269" y="22" width="1273" height="1330" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22123104" sideWeight="0.990099" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24977699" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1848" sideWeight="0.990099" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -291,7 +282,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
     <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
     <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
@@ -307,7 +298,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Убрал зависимость mongodb чтобы бралась та версия, которая используется в проекте" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефакторил метод ensureIndexes. Добавил модель utils для вспомогательных функций" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -324,11 +315,49 @@
     <MESSAGE value="Инициализация проекта" />
     <MESSAGE value="Добавил package.json" />
     <MESSAGE value="Убрал зависимость mongodb чтобы бралась та версия, которая используется в проекте" />
+    <MESSAGE value="Рефакторил метод ensureIndexes. Добавил модель utils для вспомогательных функций" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="2" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="1" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="8" selection-start="723" selection-end="723" vertical-scroll-proportion="0.0">
@@ -394,14 +423,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="32" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.0">
+        <state line="279" column="35" selection-start="6880" selection-end="6880" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="276" selection-end="276" vertical-scroll-proportion="0.14090522">
+        <state line="33" column="76" selection-start="755" selection-end="755" vertical-scroll-proportion="0.4180743">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
